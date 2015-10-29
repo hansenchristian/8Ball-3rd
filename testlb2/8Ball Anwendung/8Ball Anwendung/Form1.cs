@@ -16,7 +16,7 @@ namespace _8Ball_Anwendung
     public partial class Form1 : Form
     {
         string[] Meldungen = { "Spieler 2 hat gewonnen", "Spieler 1 hat gewonnen", "Spieler 1 an der Reihe", "Spieler 2 an der Reihe", "Spieler 1 Ball in Hand", "Spieler 2 Ball in Hand" };
-        Wrapper mywrapper = new Wrapper();
+        WrapperForLibs mywrapper = new WrapperForLibs();
         Boolean chooselibrary = false;
 
         public Form1()
@@ -102,5 +102,6 @@ namespace _8Ball_Anwendung
             }
            
         }
+
     }
 }

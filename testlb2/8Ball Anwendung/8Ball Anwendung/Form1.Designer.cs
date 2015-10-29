@@ -40,14 +40,14 @@
             this.tb_Ausgabe = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // hit
             // 
-            this.hit.Location = new System.Drawing.Point(355, 254);
-            this.hit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hit.Location = new System.Drawing.Point(266, 206);
             this.hit.Name = "hit";
-            this.hit.Size = new System.Drawing.Size(132, 38);
+            this.hit.Size = new System.Drawing.Size(99, 31);
             this.hit.TabIndex = 0;
             this.hit.Text = "Stoß";
             this.hit.UseVisualStyleBackColor = true;
@@ -55,47 +55,42 @@
             // 
             // elmBalls
             // 
-            this.elmBalls.Location = new System.Drawing.Point(353, 105);
-            this.elmBalls.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.elmBalls.Location = new System.Drawing.Point(265, 85);
             this.elmBalls.Name = "elmBalls";
-            this.elmBalls.Size = new System.Drawing.Size(132, 22);
+            this.elmBalls.Size = new System.Drawing.Size(100, 20);
             this.elmBalls.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(52, 108);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(39, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 17);
+            this.label1.Size = new System.Drawing.Size(84, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Versenkte Bälle:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(52, 44);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(39, 36);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(300, 17);
+            this.label2.Size = new System.Drawing.Size(223, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Anzahl der Bälle die die Bande berührt haben:";
             // 
             // touchedBalls
             // 
-            this.touchedBalls.Location = new System.Drawing.Point(353, 41);
-            this.touchedBalls.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.touchedBalls.Location = new System.Drawing.Point(265, 33);
             this.touchedBalls.Name = "touchedBalls";
-            this.touchedBalls.Size = new System.Drawing.Size(132, 22);
+            this.touchedBalls.Size = new System.Drawing.Size(100, 20);
             this.touchedBalls.TabIndex = 6;
             // 
             // lb_ansage
             // 
             this.lb_ansage.AutoSize = true;
-            this.lb_ansage.Location = new System.Drawing.Point(56, 182);
-            this.lb_ansage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_ansage.Location = new System.Drawing.Point(42, 148);
             this.lb_ansage.Name = "lb_ansage";
-            this.lb_ansage.Size = new System.Drawing.Size(60, 17);
+            this.lb_ansage.Size = new System.Drawing.Size(46, 13);
             this.lb_ansage.TabIndex = 7;
             this.lb_ansage.Text = "Ansage:";
             this.lb_ansage.Visible = false;
@@ -119,50 +114,47 @@
             "13",
             "14",
             "15"});
-            this.cb_ansage.Location = new System.Drawing.Point(353, 171);
-            this.cb_ansage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_ansage.Location = new System.Drawing.Point(265, 139);
             this.cb_ansage.Name = "cb_ansage";
-            this.cb_ansage.Size = new System.Drawing.Size(132, 24);
+            this.cb_ansage.Size = new System.Drawing.Size(100, 21);
             this.cb_ansage.TabIndex = 8;
             this.cb_ansage.Visible = false;
             // 
             // lb_count
             // 
             this.lb_count.AutoSize = true;
-            this.lb_count.Location = new System.Drawing.Point(149, 254);
-            this.lb_count.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_count.Location = new System.Drawing.Point(112, 206);
             this.lb_count.Name = "lb_count";
-            this.lb_count.Size = new System.Drawing.Size(16, 17);
+            this.lb_count.Size = new System.Drawing.Size(13, 13);
             this.lb_count.TabIndex = 10;
             this.lb_count.Text = "0";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(60, 254);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(45, 206);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 17);
+            this.label3.Size = new System.Drawing.Size(56, 13);
             this.label3.TabIndex = 11;
             this.label3.Text = "Spielzüge:";
             // 
             // tb_Ausgabe
             // 
-            this.tb_Ausgabe.Location = new System.Drawing.Point(56, 337);
-            this.tb_Ausgabe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Ausgabe.Location = new System.Drawing.Point(42, 274);
             this.tb_Ausgabe.Multiline = true;
             this.tb_Ausgabe.Name = "tb_Ausgabe";
             this.tb_Ausgabe.ReadOnly = true;
-            this.tb_Ausgabe.Size = new System.Drawing.Size(429, 195);
+            this.tb_Ausgabe.Size = new System.Drawing.Size(345, 159);
             this.tb_Ausgabe.TabIndex = 12;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(140, 539);
+            this.radioButton1.Location = new System.Drawing.Point(99, 441);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(106, 21);
+            this.radioButton1.Size = new System.Drawing.Size(83, 17);
             this.radioButton1.TabIndex = 13;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "1. Bibliothek";
@@ -171,18 +163,29 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(274, 539);
+            this.radioButton2.Location = new System.Drawing.Point(204, 441);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(106, 21);
+            this.radioButton2.Size = new System.Drawing.Size(83, 17);
             this.radioButton2.TabIndex = 14;
             this.radioButton2.Text = "2. Bibliothek";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(312, 438);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 571);
+            this.ClientSize = new System.Drawing.Size(433, 496);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.tb_Ausgabe);
@@ -195,7 +198,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.elmBalls);
             this.Controls.Add(this.hit);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "8 Ball";
             this.ResumeLayout(false);
@@ -217,6 +219,7 @@
         private System.Windows.Forms.TextBox tb_Ausgabe;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
