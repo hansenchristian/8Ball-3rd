@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using foreign = foreignlibary.Class1;
 using own = ownlibary.Class1;
+using _8Ball_Anwendung;
 
 
 namespace _8Ball_Anwendung
@@ -28,6 +29,8 @@ namespace _8Ball_Anwendung
 
         private void hit_Click(object sender, EventArgs e)
         {
+
+
             //Inizialisierung von Variablen aus der GUI
             bool hit = true;
             int round = Int32.Parse(lb_count.Text);

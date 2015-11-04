@@ -11,12 +11,13 @@ namespace _8Ball_Anwendung
     class WrapperForLibs
     {
         public int spieler = 0;
+        _8Ball_Anwendung.Service1 serverservice = new Service1();
 
         public int first(int count, Boolean hit, int [] sinkedBalls, Boolean ownorforeign)
         {
             if(ownorforeign == true)
             {
-                int retval = foreign.firstHit(count, hit, sinkedBalls);
+                int retval = serverservice.first(count, hit, sinkedBalls);
                 if (retval < -200)
                 {
                     spieler = (spieler + 1) % 2;

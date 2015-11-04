@@ -58,7 +58,7 @@ namespace foreignlibary
             ansageBall = temp;
         }
 
-        public static int stoss(int count, int[] ballsinhole)
+        public static int stoss(int spieler, int count, int[] ballsinhole)
         {
             Boolean isgameballholedin = false;
             ansage = false;
@@ -78,7 +78,7 @@ namespace foreignlibary
             {
                 foreach (int ball in ballsinhole)
                 {
-                    int retval = push(2, ball, ball, isgameballholedin, ansage);
+                    int retval = push(spieler, ball, ball, isgameballholedin, ansage);
                     if (retval < -200)
                     {
                         return 3;
