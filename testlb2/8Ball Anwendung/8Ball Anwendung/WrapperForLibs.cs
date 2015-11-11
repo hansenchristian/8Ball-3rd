@@ -42,7 +42,7 @@ namespace _8Ball_Anwendung
         {
             if (ownorforeign == true)
             {
-                foreign.setAnsage(ansage);
+                serverservice.ansage(ansage);
             }
             else
             {
@@ -55,7 +55,7 @@ namespace _8Ball_Anwendung
         {
             if (ownorforeign == true)
             {
-                int retval = foreign.stoss(hitBalls, sinkedBalls);
+                int retval = serverservice.other(hitBalls, sinkedBalls);
                 if (retval < -200)
                 {
                     spieler = (spieler + 1) % 2;
