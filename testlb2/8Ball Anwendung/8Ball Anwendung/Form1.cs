@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using foreign = foreignlibary.Class1;
 using own = ownlibary.Class1;
 using _8Ball_Anwendung;
 

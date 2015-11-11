@@ -3,21 +3,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using foreign = foreignlibary.Class1;
 using own = ownlibary.Class1;
+using System.ServiceModel;
+
 
 namespace _8Ball_Anwendung
 {
     class WrapperForLibs
     {
         public int spieler = 0;
-        _8Ball_Anwendung.Service1 serverservice = new Service1();
+        //ServiceHost myServiceHost = null;
+        ServiceReference1.Service1Client client = new ServiceReference1.Service1Client();
 
         public int first(int count, Boolean hit, int [] sinkedBalls, Boolean ownorforeign)
         {
             if(ownorforeign == true)
             {
-                int retval = serverservice.first(count, hit, sinkedBalls);
+                
+                
+                //Uri baseAddress = new Uri("net.tcp://localhost:2202/MyService");
+                //NetTcpBinding binding = new NetTcpBinding();
+                //myServiceHost = new ServiceHost(typeof(MyService), baseAddress);
+                //myServiceHost.AddServiceEndpoint(typeof(IService1), binding, baseAddress);
+                //myServiceHost.Open();
+
+
+                int retval = client.first(count, hit, sinkedBalls);
                 if (retval < -200)
                 {
                     spieler = (spieler + 1) % 2;
@@ -42,7 +53,7 @@ namespace _8Ball_Anwendung
         {
             if (ownorforeign == true)
             {
-                serverservice.ansage(ansage);
+                client.ansage(ansage);
             }
             else
             {
@@ -55,7 +66,7 @@ namespace _8Ball_Anwendung
         {
             if (ownorforeign == true)
             {
-                int retval = serverservice.other(hitBalls, sinkedBalls);
+                int retval = client.other(hitBalls, sinkedBalls);
                 if (retval < -200)
                 {
                     spieler = (spieler + 1) % 2;
