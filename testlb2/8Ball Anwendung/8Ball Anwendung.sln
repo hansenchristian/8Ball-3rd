@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ownlibary", "..\ownlibary\o
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "foreignlibrary", "..\foreignlibrary\foreignlibary\foreignlibrary.csproj", "{335D702B-6FD3-4520-800B-587CB1BF65A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService1", "WcfService1\WcfService1.csproj", "{AE6AC365-8BBC-47B6-88C2-322C5B828B8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{335D702B-6FD3-4520-800B-587CB1BF65A0}.Release|x64.Build.0 = Release|x64
 		{335D702B-6FD3-4520-800B-587CB1BF65A0}.Release|x86.ActiveCfg = Release|x86
 		{335D702B-6FD3-4520-800B-587CB1BF65A0}.Release|x86.Build.0 = Release|x86
+		{AE6AC365-8BBC-47B6-88C2-322C5B828B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE6AC365-8BBC-47B6-88C2-322C5B828B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE6AC365-8BBC-47B6-88C2-322C5B828B8B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AE6AC365-8BBC-47B6-88C2-322C5B828B8B}.Debug|x64.Build.0 = Debug|Any CPU
+		{AE6AC365-8BBC-47B6-88C2-322C5B828B8B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AE6AC365-8BBC-47B6-88C2-322C5B828B8B}.Debug|x86.Build.0 = Debug|Any CPU
+		{AE6AC365-8BBC-47B6-88C2-322C5B828B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE6AC365-8BBC-47B6-88C2-322C5B828B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE6AC365-8BBC-47B6-88C2-322C5B828B8B}.Release|x64.ActiveCfg = Release|Any CPU
+		{AE6AC365-8BBC-47B6-88C2-322C5B828B8B}.Release|x64.Build.0 = Release|Any CPU
+		{AE6AC365-8BBC-47B6-88C2-322C5B828B8B}.Release|x86.ActiveCfg = Release|Any CPU
+		{AE6AC365-8BBC-47B6-88C2-322C5B828B8B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
