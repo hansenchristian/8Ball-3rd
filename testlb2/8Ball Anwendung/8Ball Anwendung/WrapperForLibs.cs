@@ -12,23 +12,19 @@ namespace _8Ball_Anwendung
     class WrapperForLibs
     {
         public int spieler = 0;
-        //ServiceHost myServiceHost = null;
+
         ServiceReference1.Service1Client client = new ServiceReference1.Service1Client();
 
         public int first(int count, Boolean hit, int [] sinkedBalls, Boolean ownorforeign)
         {
             if(ownorforeign == true)
             {
-                
-                
-                //Uri baseAddress = new Uri("net.tcp://localhost:2202/MyService");
-                //NetTcpBinding binding = new NetTcpBinding();
-                //myServiceHost = new ServiceHost(typeof(MyService), baseAddress);
-                //myServiceHost.AddServiceEndpoint(typeof(IService1), binding, baseAddress);
-                //myServiceHost.Open();
-
-
                 int retval = client.first(count, hit, sinkedBalls);
+                if (sinkedBalls.Contains(8))
+                {
+                    spieler = (spieler + 1) % 2;
+                    return spieler;
+                }
                 if (retval < -200)
                 {
                     spieler = (spieler + 1) % 2;
@@ -67,6 +63,11 @@ namespace _8Ball_Anwendung
             if (ownorforeign == true)
             {
                 int retval = client.other(hitBalls, sinkedBalls);
+                if (sinkedBalls.Contains(8))
+                {
+                    spieler = (spieler + 1) % 2;
+                    return spieler;
+                }
                 if (retval < -200)
                 {
                     spieler = (spieler + 1) % 2;
@@ -74,7 +75,7 @@ namespace _8Ball_Anwendung
                 }
                 else if(retval != 1 && retval != 2)
                 {
-                    return 3 +  spieler;
+                    return 3 + spieler;
                 }
                 else
                 {
